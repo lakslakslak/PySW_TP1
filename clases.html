@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases | FitLife</title>
+</head>
+<body>
+
+    <!-- HEADER  -->
+    <header>
+        <nav class="mega-menu">
+            <div class="logo">FitLife</div>
+            <ul class="menu">
+              <li><a href="index.html">Inicio</a></li>
+                <li><a href="clases.html">Clases</a></li>
+                <li><a href="#">Entrenadores</a></li> 
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Planes</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- FILTROS POR CATEGORÍA -->
+    <section class="filtros-clases">
+        <h2>Filtrar por Categoría</h2>
+        <div class="filtros">
+            <label>
+                <input type="checkbox" name="categoria" value="musculacion">
+                Musculación
+            </label>
+            <label>
+                <input type="checkbox" name="categoria" value="crossfit">
+                CrossFit
+            </label>
+            <label>
+                <input type="checkbox" name="categoria" value="yoga">
+                Yoga
+            </label>
+            <label>
+                <input type="checkbox" name="categoria" value="spinning">
+                Spinning
+            </label>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE CLASES (GRID tipo Masonry) -->
+    <section class="galeria-clases">
+        <div class="grid-clases">
+            <div class="tarjeta musculacion">
+                <img src="musculacion1.jpg" alt="Musculación 1">
+                <div class="info">
+                    <h3>Musculación Básica</h3>
+                    <p>Ideal para principiantes.</p>
+                </div>
+            </div>
+            <div class="tarjeta crossfit">
+                <img src="crossfit1.jpg" alt="CrossFit 1">
+                <div class="info">
+                    <h3>CrossFit Challenge</h3>
+                    <p>Supera tus límites.</p>
+                </div>
+            </div>
+            <div class="tarjeta yoga">
+                <img src="yoga1.jpg" alt="Yoga 1">
+                <div class="info">
+                    <h3>Yoga Flow</h3>
+                    <p>Conecta cuerpo y mente.</p>
+                </div>
+            </div>
+            <div class="tarjeta spinning">
+                <img src="spinning1.jpg" alt="Spinning 1">
+                <div class="info">
+                    <h3>Spinning Energy</h3>
+                    <p>Cardio intenso sobre ruedas.</p>
+                </div>
+            </div>
+            <!-- Agrega más tarjetas si quieres -->
+        </div>
+    </section>
+
+    <!-- TABLA DE HORARIOS -->
+    <section class="horarios">
+        <h2>Horarios Semanales</h2>
+        <div class="tabla-horarios">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Hora</th>
+                        <th>Lunes</th>
+                        <th>Martes</th>
+                        <th>Miércoles</th>
+                        <th>Jueves</th>
+                        <th>Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7:00 - 8:00</td>
+                        <td>Musculación</td>
+                        <td>CrossFit</td>
+                        <td>Yoga</td>
+                        <td>Spinning</td>
+                        <td>Musculación</td>
+                    </tr>
+                    <tr>
+                        <td>18:00 - 19:00</td>
+                        <td>Yoga</td>
+                        <td>Spinning</td>
+                        <td>CrossFit</td>
+                        <td>Musculación</td>
+                        <td>CrossFit</td>
+                    </tr>
+                    <!-- Más filas si quieres -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+     <!-- FOOTER -->
+     <footer>
+        <div class="newsletter">
+            <h3>Suscríbete a nuestro Newsletter</h3>
+            <form>
+                <input type="email" placeholder="Tu correo electrónico" required>
+                <button type="submit">Suscribirse</button>
+            </form>
+        </div>
+
+        <div class="redes-sociales">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">YouTube</a>
+        </div>
+
+        <div class="mapa">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.523636359913!2d-65.30040234913213!3d-24.18683181154682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1744355456380!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </footer>
+    
+</body>
+</html>

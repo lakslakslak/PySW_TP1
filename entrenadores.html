@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrenadores</title>
+    <link rel="stylesheet" href="css/header_main.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/entrenadores/trainers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/icons/icono.png" alt="Alfa Gym logo">
+                        <span>Energy</span>
+                    </a>
+                </div>                
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <nav id="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="clases.html">Clases</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Musculación</a></li>
+                                <li><a href="#">CrossFit</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="entrenadores.html">Entrenadores</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Ver Todos</a></li>
+                                <li><a href="#">Especialistas</a></li>
+                                <li><a href="#">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="has-submenu">
+                            <a href="planes.html">planes</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Plan Mensual</a></li>
+                                <li><a href="#">Plan Anual</a></li>
+                                <li><a href="#">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-content">
+            <section class="hero">
+                <h1>Nuestros Entrenadores</h1>
+                <p>Conoce a los profesionales que te guiarán en tu camino fitness</p>
+            </section>
+
+            <section class="trainers-section">
+                <div class="trainers-grid">
+                    <!-- Entrenador 1 -->
+                    <div class="trainer-card">
+                        <div class="card-inner">
+                            <!-- Frente de la tarjeta -->
+                            <div class="card-front">
+                                <div class="trainer-image">
+                                    <img src="assets/images/entrenadores/musculacion.jpg" alt="Miguel Rodríguez">
+                                    <div class="trainer-specialty">Musculación</div>
+                                </div>
+                                <div class="trainer-info">
+                                    <h3>Joel Martinez</h3>
+                                    <p class="trainer-title">Especialista en Musculación</p>
+                                    <div class="trainer-socials">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reverso de la tarjeta -->
+                            <div class="card-back">
+                                <h3>Joel Martinez</h3>
+                                <p>Más de 8 años de experiencia en entrenamiento de fuerza y musculación. Certificado
+                                    en
+                                    Entrenamiento Personal y Nutrición Deportiva.</p>
+
+                                <div class="skills">
+                                    <div class="skill">
+                                        <span class="skill-name">Fuerza</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 95%;" data-level="90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Resistencia</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 80%;" data-level="85%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Flexibilidad</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 70%;" data-level="70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rating">
+                                    <h4>Valoración de alumnos</h4>
+                                    <div class="stars" data-rating="4.8">
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star half"></span>
+                                    </div>
+                                    <span class="rating-value">4.8</span>
+                                </div>
+
+                                <a href="#" class="btn">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrenador 2 -->
+                    <div class="trainer-card">
+                        <div class="card-inner">
+                            <!-- Frente de la tarjeta -->
+                            <div class="card-front">
+                                <div class="trainer-image">
+                                    <img src="assets/images/entrenadores/crosfit.jpg" alt="Laura Martínez">
+                                    <div class="trainer-specialty">CrossFit</div>
+                                </div>
+                                <div class="trainer-info">
+                                    <h3>Alejandra Sosa</h3>
+                                    <p class="trainer-title">Coach de CrossFit</p>
+                                    <div class="trainer-socials">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reverso de la tarjeta -->
+                            <div class="card-back">
+                                <h3>Alejandra Sosa</h3>
+                                <p>Atleta profesional de CrossFit con certificación de Nivel 3. Especialista en
+                                    entrenamiento funcional de alta intensidad y técnicas olímpicas.</p>
+
+                                <div class="skills">
+                                    <div class="skill">
+                                        <span class="skill-name">Potencia</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 90%;" data-level="90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Resistencia</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 95%;" data-level="95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Técnica</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 85%;" data-level="85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rating">
+                                    <h4>Valoración de alumnos</h4>
+                                    <div class="stars" data-rating="4.9">
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star almost-full"></span>
+                                    </div>
+                                    <span class="rating-value">4.9</span>
+                                </div>
+
+                                <a href="#" class="btn">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrenador 3 -->
+                    <div class="trainer-card">
+                        <div class="card-inner">
+                            <!-- Frente de la tarjeta -->
+                            <div class="card-front">
+                                <div class="trainer-image">
+                                    <img src="assets/images/entrenadores/yoga.jpg" alt="Ana Gómez">
+                                    <div class="trainer-specialty">Yoga</div>
+                                </div>
+                                <div class="trainer-info">
+                                    <h3>Wara Gonzales</h3>
+                                    <p class="trainer-title">Instructora de Yoga</p>
+                                    <div class="trainer-socials">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reverso de la tarjeta -->
+                            <div class="card-back">
+                                <h3>Wara Gonzales</h3>
+                                <p>Maestra de Yoga con más de 10 años de experiencia. Certificada en Hatha, Vinyasa y
+                                    Yoga
+                                    Restaurativo. Especialista en meditación y mindfulness.</p>
+
+                                <div class="skills">
+                                    <div class="skill">
+                                        <span class="skill-name">Flexibilidad</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 98%;" data-level="98%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Equilibrio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 95%;" data-level="95%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Meditación</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 90%;" data-level="90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rating">
+                                    <h4>Valoración de alumnos</h4>
+                                    <div class="stars" data-rating="5.0">
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                    </div>
+                                    <span class="rating-value">5.0</span>
+                                </div>
+
+                                <a href="#" class="btn">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrenador 4 -->
+                    <div class="trainer-card">
+                        <div class="card-inner">
+                            <!-- Frente de la tarjeta -->
+                            <div class="card-front">
+                                <div class="trainer-image">
+                                    <img src="assets/images/entrenadores/spinning.jpg" alt="Carlos Pérez">
+                                    <div class="trainer-specialty">Spinning</div>
+                                </div>
+                                <div class="trainer-info">
+                                    <h3>Paul Hernandez</h3>
+                                    <p class="trainer-title">Instructor de Spinning</p>
+                                    <div class="trainer-socials">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reverso de la tarjeta -->
+                            <div class="card-back">
+                                <h3>Paul Hernandez</h3>
+                                <p>Especialista en ciclismo indoor con más de 10 años de experiencia. Certificado en
+                                    entrenamiento cardiovascular y programación de sesiones HIIT.</p>
+
+                                <div class="skills">
+                                    <div class="skill">
+                                        <span class="skill-name">Resistencia</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 92%;" data-level="92%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Ritmo</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 88%;" data-level="88%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Motivación</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 96%;" data-level="96%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rating">
+                                    <h4>Valoración de alumnos</h4>
+                                    <div class="stars" data-rating="4.7">
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star half"></span>
+                                    </div>
+                                    <span class="rating-value">4.7</span>
+                                </div>
+
+                                <a href="#" class="btn">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrenador 5 -->
+                    <div class="trainer-card">
+                        <div class="card-inner">
+                            <!-- Frente de la tarjeta -->
+                            <div class="card-front">
+                                <div class="trainer-image">
+                                    <img src="assets/images/entrenadores/pilates.jpg" alt="Elena Sánchez">
+                                    <div class="trainer-specialty">Pilates</div>
+                                </div>
+                                <div class="trainer-info">
+                                    <h3>Paris García</h3>
+                                    <p class="trainer-title">Instructora de Pilates</p>
+                                    <div class="trainer-socials">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reverso de la tarjeta -->
+                            <div class="card-back">
+                                <h3>Paris García</h3>
+                                <p>Especialista en método Pilates con certificación internacional. Experiencia en
+                                    rehabilitación física y entrenamiento personalizado para todos los niveles.</p>
+
+                                <div class="skills">
+                                    <div class="skill">
+                                        <span class="skill-name">Control</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 94%;" data-level="94%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Precisión</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 96%;" data-level="96%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Técnica</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 90%;" data-level="90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rating">
+                                    <h4>Valoración de alumnos</h4>
+                                    <div class="stars" data-rating="4.9">
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star almost-full"></span>
+                                    </div>
+                                    <span class="rating-value">4.9</span>
+                                </div>
+
+                                <a href="#" class="btn">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Entrenador 6 -->
+                    <div class="trainer-card">
+                        <div class="card-inner">
+                            <!-- Frente de la tarjeta -->
+                            <div class="card-front">
+                                <div class="trainer-image">
+                                    <img src="assets/images/entrenadores/crossfit.jpg" alt="David Torres">
+                                    <div class="trainer-specialty">HIIT</div>
+                                </div>
+                                <div class="trainer-info">
+                                    <h3>Martin Perez</h3>
+                                    <p class="trainer-title">Entrenador de HIIT</p>
+                                    <div class="trainer-socials">
+                                        <a href="#"><i class="fab fa-instagram"></i></a>
+                                        <a href="#"><i class="fab fa-twitter"></i></a>
+                                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Reverso de la tarjeta -->
+                            <div class="card-back">
+                                <h3>Martin Perez </h3>
+                                <p>Especialista en entrenamiento de alta intensidad por intervalos. Experto en pérdida
+                                    de
+                                    peso y acondicionamiento físico avanzado.</p>
+
+                                <div class="skills">
+                                    <div class="skill">
+                                        <span class="skill-name">Intensidad</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 97%;" data-level="97%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Resistencia</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 90%;" data-level="90%"></div>
+                                        </div>
+                                    </div>
+                                    <div class="skill">
+                                        <span class="skill-name">Planificación</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-level" style="width: 85%;" data-level="85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="rating">
+                                    <h4>Valoración de alumnos</h4>
+                                    <div class="stars" data-rating="4.6">
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star full"></span>
+                                        <span class="star half"></span>
+                                    </div>
+                                    <span class="rating-value">4.6</span>
+                                </div>
+
+                                <a href="#" class="btn">Ver Horarios</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <div class="cta-content">
+                    <h2>¿Quieres una sesión personalizada?</h2>
+                    <p>Nuestros entrenadores están disponibles para ayudarte a alcanzar tus objetivos fitness</p>
+                    <a href="#" class="btn btn-large">Reserva tu sesión</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="mapa">
+                <h3>¿Dónde estamos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7278.8907787620465!2d-65.288007!3d-24.191176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744226683583!5m2!1ses-419!2sar"
+                    width="1120" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br />
+            </div>
+
+            <!-- Mapa embebido -->
+
+            <!--Defecto footer de clases-->
+            <div class="footer-content">
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Avenida 19 de Abril</p>
+                    <p>Email: alumnos@fi.unju.edu.ar</p>
+                    <p>Tel: +54 388 1234567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>REDES SOCIALES</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Energy. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>

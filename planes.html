@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planes de Suscripción</title>
+    <link rel="stylesheet" href="css/header_main.css">
+    <link rel="stylesheet" href="css/planes/planes.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <script src="js/planes.js"></script>
+    <div class="container">
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/icons/icono.png" alt="Alfa Gym logo">
+                        <span>Energy</span>
+                    </a>
+                </div>                
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <nav id="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="clases.html">Clases</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Musculación</a></li>
+                                <li><a href="#">CrossFit</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="entrenadores.html">Entrenadores</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Ver Todos</a></li>
+                                <li><a href="#">Especialistas</a></li>
+                                <li><a href="#">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="has-submenu">
+                            <a href="planes.html">planes</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Plan Mensual</a></li>
+                                <li><a href="#">Plan Anual</a></li>
+                                <li><a href="#">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!--MENU PRINCIPAL-->
+
+        <main class="main-content">
+            <div class="pricing-header">
+                <h1>Elige el plan perfecto para ti</h1>
+                <p>planes transparentes sin sorpresas</p>
+            </div>
+
+            <div class="toggle-wrapper">
+                <span class="toggle-label">Mensual</span>
+                <label class="toggle">
+                    <input type="checkbox" id="plan-toggle">
+                    <span class="toggle-slider"></span>
+                </label>
+                <span class="toggle-label">Anual</span>
+                <span class="annual-badge">Ahorra 20%</span>
+            </div>
+
+            <div class="pricing-cards">
+                <!-- Plan Básico -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h2>Plan Básico</h2>
+                        <div class="price-container">
+                            <div class="price price--monthly">$9.99<span>/mes</span></div>
+                            <div class="price price--annual">$95.90<span>/año</span></div>
+                        </div>
+                        <p>Para uso personal</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>5GB de almacenamiento</li>
+                            <li>1 usuario</li>
+                            <li>Soporte por email
+                                <span class="feature-tooltip"
+                                    data-tooltip="Tiempo de respuesta en 24 horas">ⓘ</span>
+                            </li>
+                            <li>Acceso a funciones básicas</li>
+                        </ul>
+                        <button class="btn">Elegir plan</button>
+                    </div>
+                </div>
+
+                <!-- Plan Pro -->
+                <div class="pricing-card pricing-card--featured">
+                    <div class="featured-badge">Popular</div>
+                    <div class="card-header">
+                        <h2>Plan Pro</h2>
+                        <div class="price-container">
+                            <div class="price price--monthly">$19.99<span>/mes</span></div>
+                            <div class="price price--annual">$191.90<span>/año</span></div>
+                        </div>
+                        <p>Para profesionales</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>25GB de almacenamiento</li>
+                            <li>5 usuarios</li>
+                            <li>Soporte prioritario
+                                <span class="feature-tooltip" data-tooltip="Tiempo de respuesta en 8 horas">ⓘ</span>
+                            </li>
+                            <li>Acceso a funciones avanzadas</li>
+                            <li>Análisis detallados
+                                <span class="feature-tooltip"
+                                    data-tooltip="Incluye acceso ilimitado a estadísticas">ⓘ</span>
+                            </li>
+                        </ul>
+                        <button class="btn">Elegir plan</button>
+                    </div>
+                </div>
+
+                <!-- Plan Empresarial -->
+                <div class="pricing-card">
+                    <div class="card-header">
+                        <h2>Plan Empresarial</h2>
+                        <div class="price-container">
+                            <div class="price price--monthly">$49.99<span>/mes</span></div>
+                            <div class="price price--annual">$479.90<span>/año</span></div>
+                        </div>
+                        <p>Para equipos y empresas</p>
+                    </div>
+                    <div class="card-body">
+                        <ul class="features-list">
+                            <li>100GB de almacenamiento</li>
+                            <li>Usuarios ilimitados</li>
+                            <li>Soporte 24/7
+                                <span class="feature-tooltip"
+                                    data-tooltip="Asistencia inmediata a cualquier hora">ⓘ</span>
+                            </li>
+                            <li>Todas las funciones</li>
+                            <li>Análisis avanzados</li>
+                            <li>API dedicada
+                                <span class="feature-tooltip"
+                                    data-tooltip="Integración con cualquier plataforma">ⓘ</span>
+                            </li>
+                        </ul>
+                        <button class="btn">Elegir plan</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!--    FOOTER SECCION -->
+        <footer class="footer">
+            <div class="mapa">
+                <h3>¿Dónde estamos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7278.8907787620465!2d-65.288007!3d-24.191176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744226683583!5m2!1ses-419!2sar"
+                    width="1120" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br />
+            </div>
+
+            <!-- Mapa embebido -->
+
+            <!--Defecto footer de clases-->
+            <div class="footer-content">
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Avenida 19 de Abril</p>
+                    <p>Email: alumnos@fi.unju.edu.ar</p>
+                    <p>Tel: +54 388 1234567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>REDES SOCIALES</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 AlfaGym. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

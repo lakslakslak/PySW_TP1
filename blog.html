@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog fitness</title>
+    <link rel="stylesheet" href="css/header_main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/blog/blog.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header con navegación -->
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/icons/icono.png" alt="Alfa Gym logo">
+                        <span>Energy</span>
+                    </a>
+                </div>                
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <nav id="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="clases.html">Clases</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Musculación</a></li>
+                                <li><a href="#">CrossFit</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="entrenadores.html">Entrenadores</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Ver Todos</a></li>
+                                <li><a href="#">Especialistas</a></li>
+                                <li><a href="#">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="has-submenu">
+                            <a href="planes.html">planes</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Plan Mensual</a></li>
+                                <li><a href="#">Plan Anual</a></li>
+                                <li><a href="#">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Contenido principal -->
+        <main class="main-content">
+            <!-- Sistema de filtrado con CSS Puro -->
+            <input type="radio" name="filter" id="all" class="filter-radio" checked>
+            <input type="radio" name="filter" id="nutrition" class="filter-radio">
+            <input type="radio" name="filter" id="workout" class="filter-radio">
+            <input type="radio" name="filter" id="wellness" class="filter-radio">
+            <input type="radio" name="filter" id="lifestyle" class="filter-radio">
+    
+            <div class="filter-container">
+                <label for="all" class="filter-btn">Todos</label>
+                <label for="nutrition" class="filter-btn">Nutrición</label>
+                <label for="workout" class="filter-btn">Entrenamiento</label>
+                <label for="wellness" class="filter-btn">Bienestar</label>
+                <label for="lifestyle" class="filter-btn">Estilo de Vida</label>
+            </div>
+    
+            <!-- Grid de artículos (CSS Grid) -->
+            <div class="articles-grid">
+                <!-- Artículo 1 -->
+                <article class="article nutrition">
+                    <div class="article-img" style="background-image: url('assets/images/blog/superalimentos.jpg');">
+                        <div class="article-tags">
+                            <span class="tag nutrition">Nutrición</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">10 Abril, 2025</span>
+                        <h3>Los 5 Superalimentos que Deberías Incluir en tu Dieta</h3><br>
+                        <p class="article-excerpt">Descubre qué superalimentos pueden transformar tu salud y rendimiento físico. Estos alimentos ricos en nutrientes son esenciales para cualquier entusiasta del fitness.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+    
+                <!-- Artículo 2 -->
+                <article class="article workout">
+                    <div class="article-img" style="background-image: url('assets/images/blog/hit.jpg');">
+                        <div class="article-tags">
+                            <span class="tag workout">Entrenamiento</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">8 Abril, 2025</span>
+                        <h3>Rutina HIIT de 15 Minutos para Quemar Grasa</h3><br>
+                        <p class="article-excerpt">¿Poco tiempo para entrenar? Esta rutina HIIT de 15 minutos es perfecta para maximizar la quema de calorías en el menor tiempo posible,la quema de calorías en el menor tiempo posible.</p><br>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+    
+                <!-- Artículo 3 -->
+                <article class="article wellness">
+                    <div class="article-img" style="background-image: url('assets/images/blog/meditacion.jpg');">
+                        <div class="article-tags">
+                            <span class="tag wellness">Bienestar</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">5 Abril, 2025</span>
+                        <h3>Técnicas de Meditación para Deportistas</h3><br>
+                        <p class="article-excerpt">La meditación no solo calma la mente, sino que también puede mejorar tu rendimiento deportivo.Aprende cómo incorporarla a tu rutina y mucho mas.</p><br>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+    
+                <!-- Artículo 4 -->
+                <article class="article nutrition workout">
+                    <div class="article-img" style="background-image: url('assets/images/blog/nutricion.jpg');">
+                        <div class="article-tags">
+                            <span class="tag nutrition">Nutrición</span>
+                            <span class="tag workout">Entrenamiento</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">3 Abril, 2025</span>
+                        <h3>Nutrición Pre y Post Entrenamiento</h3><br>
+                        <p class="article-excerpt">Lo que comes antes y después de entrenar puede marcar la diferencia en tus resultados. Descubre las mejores estrategias nutricionales.</p><br>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+    
+                <!-- Artículo 5 -->
+                <article class="article lifestyle">
+                    <div class="article-img" style="background-image: url('assets/images/blog/activosencasa.jpg');">
+                        <div class="article-tags">
+                            <span class="tag lifestyle">Estilo de Vida</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">1 Abril, 2025</span>
+                        <h3>Cómo Mantener un Estilo de Vida Activo Trabajando desde Casa</h3><br>
+                        <p class="article-excerpt">El trabajo remoto puede convertirse en un desafío para mantenerse activo. Aquí hay consejos prácticos para incorporar movimiento a tu día.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+    
+                <!-- Artículo 6 -->
+                <article class="article wellness lifestyle">
+                    <div class="article-img" style="background-image: url('assets/images/blog/cuerpofitness.jpg');">
+                        <div class="article-tags">
+                            <span class="tag wellness">Bienestar</span>
+                            <span class="tag lifestyle">Estilo de Vida</span>
+                        </div>
+                    </div>
+                    <div class="article-content">
+                        <span class="article-date">30 Marzo, 2025</span>
+                        <h3>La Ciencia del Sueño y su Impacto en la Recuperación Muscular</h3><br>
+                        <p class="article-excerpt">Un buen descanso es esencial para la recuperación muscular y el rendimiento deportivo. Descubre cómo optimizar tus horas de sueño.</p>
+                        <a href="#" class="read-more">Leer más</a>
+                    </div>
+                </article>
+            </div>
+    
+            <!-- Sección de comentarios (CSS Grid + Flexbox) -->
+            <section class="comments-section">
+                <div class="comments-title">
+                    <h3>Comentarios</h3>
+                    <span>5</span>
+                </div>
+    
+                <div class="comments-container">
+                    <!-- Comentario 1 -->
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="MC"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">María Costa</span>
+                                <span class="comment-date">10 Abril, 2025</span>
+                            </div>
+                            <p class="comment-body">¡Excelentes consejos de nutrición! He estado implementando algunos de los superalimentos mencionados y ya noto la diferencia en mi energía durante los entrenamientos.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Comentario 2 -->
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="JR"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Juan Rodríguez</span>
+                                <span class="comment-date">9 Abril, 2025</span>
+                            </div>
+                            <p class="comment-body">La rutina HIIT de 15 minutos es perfecta para mi agenda ocupada. ¿Hay alguna recomendación para principiantes que quieran adaptarla?</p>
+                        </div>
+                    </div>
+    
+                    <!-- Comentario 3 -->
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="LM"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Laura Martínez</span>
+                                <span class="comment-date">7 Abril, 2025</span>
+                            </div>
+                            <p class="comment-body">He estado practicando las técnicas de meditación para deportistas durante dos semanas y definitivamente noto una mejora en mi concentración durante las competencias.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Comentario 4 -->
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="PG"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Pedro González</span>
+                                <span class="comment-date">5 Abril, 2025</span>
+                            </div>
+                            <p class="comment-body">Los consejos sobre nutrición pre y post entrenamiento me han ayudado mucho. Ahora me siento con más energía durante mis sesiones de levantamiento de pesas.</p>
+                        </div>
+                    </div>
+    
+                    <!-- Comentario 5 -->
+                    <div class="comment">
+                        <div class="comment-avatar" data-initials="AS"></div>
+                        <div class="comment-content">
+                            <div class="comment-header">
+                                <span class="comment-author">Ana Sánchez</span>
+                                <span class="comment-date">3 Abril, 2025</span>
+                            </div>
+                            <p class="comment-body">Trabajar desde casa ha sido un desafío para mantenerme activa. Los consejos del artículo son muy prácticos. ¡Ya implementé las mini-pausas activas cada hora!</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="mapa">
+                <h3>¿Dónde estamos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7278.8907787620465!2d-65.288007!3d-24.191176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744226683583!5m2!1ses-419!2sar"
+                    width="1120" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br />
+            </div>
+
+            <!-- Mapa embebido -->
+
+            <!--Defecto footer de clases-->
+            <div class="footer-content">
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Avenida 19 de Abril</p>
+                    <p>Email: alumnos@fi.unju.edu.ar</p>
+                    <p>Tel: +54 388 1234567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>REDES SOCIALES</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Energy. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>

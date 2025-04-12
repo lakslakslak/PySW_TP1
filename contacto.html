@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="css/contacto/contacto.css">
+    <link rel="stylesheet" href="css/header_main.css" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/icons/icono.png" alt="Alfa Gym logo">
+                        <span>Energy</span>
+                    </a>
+                </div>                
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <nav id="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="clases.html">Clases</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Musculación</a></li>
+                                <li><a href="#">CrossFit</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="entrenadores.html">Entrenadores</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Ver Todos</a></li>
+                                <li><a href="#">Especialistas</a></li>
+                                <li><a href="#">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="has-submenu">
+                            <a href="planes.html">planes</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Plan Mensual</a></li>
+                                <li><a href="#">Plan Anual</a></li>
+                                <li><a href="#">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="main-content">
+            <h1>Contáctanos</h1>
+
+            <!-- Formulario Principal -->
+            <form id="contactForm" action="#confirmacion" method="GET">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="nombre">Nombre completo *</label>
+                        <input type="text" id="nombre" name="nombre" required minlength="3" pattern="[A-Za-zÀ-ÿ\s]+"
+                            placeholder="Tu nombre completo">
+                        <div class="validation-message">
+                            <span class="valid-message">✓ Correcto</span>
+                            <span class="invalid-message">✗ Por favor, ingresa un nombre válido</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Correo electrónico *</label>
+                        <input type="email" id="email" name="email" required placeholder="correo@ejemplo.com">
+                        <div class="validation-message">
+                            <span class="valid-message">✓ Correcto</span>
+                            <span class="invalid-message">✗ Ingresa un email válido</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9+\-\s]{9,15}"
+                            placeholder="Ej: 612345678">
+                        <div class="validation-message">
+                            <span class="valid-message">✓ Correcto</span>
+                            <span class="invalid-message">✗ Formato de teléfono no válido</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <input type="text" id="asunto" name="asunto" required minlength="3"
+                            placeholder="Asunto de tu mensaje">
+                        <div class="validation-message">
+                            <span class="valid-message">✓ Correcto</span>
+                            <span class="invalid-message">✗ Por favor, ingresa un asunto</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group full-width">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea id="mensaje" name="mensaje" required minlength="10"
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <div class="validation-message">
+                            <span class="valid-message">✓ Correcto</span>
+                            <span class="invalid-message">✗ Tu mensaje debe tener al menos 10 caracteres</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos y condiciones *</label>
+                        <div class="validation-message">
+                            <span class="invalid-message">✗ Debes aceptar los términos y condiciones</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Enviar mensaje</span>
+                        <div class="spinner"></div>
+                    </button>
+                </div>
+            </form>
+
+            <!-- Modal de Confirmación -->
+            <div id="confirmacion" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>¡Mensaje enviado correctamente!</h2>
+                        <a href="#" class="close-btn">&times;</a>
+                    </div>
+                    <div class="modal-body">
+                        <div class="success-icon">✓</div>
+                        <p>Gracias por contactarnos. Te responderemos lo antes posible.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn-cerrar">Cerrar</a>
+                        <a href=""></a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="mapa">
+                <h3>¿Dónde estamos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7278.8907787620465!2d-65.288007!3d-24.191176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744226683583!5m2!1ses-419!2sar"
+                    width="1120" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br />
+            </div>
+
+            <!-- Mapa embebido -->
+
+            <!--Defecto footer de clases-->
+            <div class="footer-content">
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Suscríbete a nuestro newsletter</h3>
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Avenida 19 de Abril</p>
+                    <p>Email: alumnos@fi.unju.edu.ar</p>
+                    <p>Tel: +54 388 1234567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>REDES SOCIALES</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Energy. Todos los derechos reservados.</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

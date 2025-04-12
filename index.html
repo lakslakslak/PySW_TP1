@@ -1,107 +1,197 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gimnasio FitLife</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="css/header_main.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
-
-    <!-- HEADER -->
-    <header>
-        <nav class="mega-menu">
-            <div class="logo">FitLife</div>
-            <ul class="menu">
-              <li><a href="index.html">Inicio</a></li>
-                <li><a href="clases.html">Clases</a></li>
-                <li><a href="#">Entrenadores</a></li> 
-                <li><a href="#">Contacto</a></li>
-                <li><a href="#">Planes</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- HERO -->
-    <section class="hero">
-        <video autoplay muted loop class="background-video">
-            <source src="video-entrenamiento.mp4" type="video/mp4">
-            Tu navegador no soporta videos HTML5.
-        </video>
-        <div class="hero-overlay">
-            <h1>¡Transforma tu cuerpo, transforma tu vida!</h1>
-            <p>Únete a la familia FitLife hoy.</p>
-        </div>
-    </section>
-
-    <!-- CLASES DESTACADAS -->
-    <section class="clases-destacadas">
-        <h2>Nuestras Clases</h2>
-        <div class="cards-container">
-            <div class="card">
-                <img src="musculacion.jpg" alt="Musculación">
-                <h3>Musculación</h3>
-                <p>Fortalece y tonifica tu cuerpo.</p>
+    <div class="container">
+        <header class="header">
+            <div class="nav-container">
+                <div class="logo">
+                    <a href="index.html" class="logo-link">
+                        <img src="assets/icons/icono.png" alt="Alfa Gym logo">
+                        <span>Energy</span>
+                    </a>
+                </div>                
+                <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+                <nav id="nav">
+                    <ul class="nav-list">
+                        <li>
+                            <a href="index.html">Inicio</a>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="clases.html">Clases</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Musculación</a></li>
+                                <li><a href="#">CrossFit</a></li>
+                                <li><a href="#">Yoga</a></li>
+                                <li><a href="#">Spinning</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="entrenadores.html">Entrenadores</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Ver Todos</a></li>
+                                <li><a href="#">Especialistas</a></li>
+                                <li><a href="#">Nuevos Coaches</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li class="has-submenu">
+                            <a href="planes.html">planes</a>
+                            <ul class="mega-menu">
+                                <li><a href="#">Plan Mensual</a></li>
+                                <li><a href="#">Plan Anual</a></li>
+                                <li><a href="#">Comparador</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="blog.html">Blog</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="card">
-                <img src="crossfit.jpg" alt="CrossFit">
-                <h3>CrossFit</h3>
-                <p>Entrenamientos de alta intensidad.</p>
-            </div>
-            <div class="card">
-                <img src="yoga.jpg" alt="Yoga">
-                <h3>Yoga</h3>
-                <p>Equilibrio entre cuerpo y mente.</p>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <!-- CONTADOR ANIMADO -->
-    <section class="contador">
-      <div class="contador-item">
-          <span class="numero">500+</span>
-          <p>Socios Satisfechos</p>
-      </div>
-  </section>
-    <!-- TESTIMONIOS -->
-    <section class="testimonios">
-        <h2>Testimonios</h2>
-        <div class="carrusel">
-            <div class="testimonio">
-                <p>"El mejor gimnasio que he conocido, ¡ambiente increíble!"</p>
-                <h4>- Juan Pérez</h4>
+
+
+        <main class="main-content">
+            <section class="hero">
+                <video autoplay muted loop>
+
+                    <source src="https://cdn.pixabay.com/video/2019/01/03/20422-309694396_large.mp4" type="video/mp4">
+                    Tu navegador no soporta el video.
+                </video>
+                <div class="overlay"></div>
+                <div class="hero-content">
+                    <h1>Desafía tus límites, domina tu potencial</h1>
+                    <p>Disciplina, fuerza y enfoque para alcanzar lo extraordinario</p>
+                </div>                
+            </section>
+            <section class="clases-destacadas">
+                <div class="featured-classes-title">
+                    <h2>NUESTRAS CLASES DESTACADAS</h2>
+                </div>
+            </section>
+            <!--Seccion Tarjetas -->
+            <section class="cards-container">
+
+                <article class="card">
+                    <img src="assets/images/index/yoga-clases-destacadas.png" alt="Yoga">
+                    <h3>Yoga</h3>
+                    <p>Equilibra cuerpo y mente.</p>
+                    <button>¡Relájate ahora!</button>
+                </article>
+
+                <article class="card">
+                    <img src="assets/images/index/spining-clases-destacadas.png" alt="Spinning">
+                    <h3>Spinning</h3>
+                    <p>¡Quema calorías al ritmo!</p>
+                    <button>Únete a la acción</button>
+                </article>
+
+                <article class="card">
+                    <img src="assets/images/index/crossfit-clases-destacadas.png" alt="Crossfit">
+                    <h3>Crossfit</h3>
+                    <p>Rompe tus límites.</p>
+                    <button>¡Desafíate ahora!</button>
+                </article>
+            </section>
+
+            <!--punto crear contador-->
+            <section class="contador-section">
+                <div class="contador">
+                    <span class="numero" data-valor="500 "> </span> +
+                    <p>Socios satisfechos</p>
+                </div>
+            </section>
+
+            <!--Seccion del carucel-->
+            <section class="carrusel">
+                <input type="radio" name="slider" id="slide1" checked>
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+
+                <div class="slides">
+                    <div class="slide" id="s1">
+                        <blockquote>“Amo el lugar, clases divertidas y excelentes entrenadores”</blockquote>
+                        <p>- Rachell</p>
+                        <div class="comentario">
+                            <label for="slide3" class="prev">←</label>
+                            <label for="slide2" class="next">→</label>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="s2">
+                        <blockquote>“Maquinaria de primera, el equipo siempre etá dispuesto a motivarte”</blockquote>
+                        <p>- Sam</p>
+                        <div class="comentario">
+                            <label for="slide1" class="prev">←</label>
+                            <label for="slide3" class="next">→</label>
+                        </div>
+                    </div>
+
+                    <div class="slide" id="s3">
+                        <blockquote>“Precios accesibles, resultados en poco tiempo y exelentes entrenadores”</blockquote>
+                        <p>- Michael</p>
+                        <div class="comentario">
+                            <label for="slide2" class="prev">←</label>
+                            <label for="slide1" class="next">→</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <script src="js/header.js" defer></script>
+        </main>
+
+        <footer class="footer">
+            <div class="mapa">
+                <h3>¿Dónde estamos?</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7278.8907787620465!2d-65.288007!3d-24.191176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses-419!2sar!4v1744226683583!5m2!1ses-419!2sar"
+                    width="1120" height="180" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <br />
             </div>
-            <div class="testimonio">
-                <p>"Gracias a FitLife logré mis metas de forma divertida y segura."</p>
-                <h4>- Ana Gómez</h4>
+            <!--Defecto footer de clases-->
+            <div class="footer-content">
+                <!-- Newsletter -->
+                <div class="newsletter">
+                    <h3>Suscríbete a nuestro centro informativo</h3>
+                    <form>
+                        <input type="email" placeholder="Tu correo electrónico" required>
+                        <button type="submit">Suscribirse</button>
+                    </form>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Avenida 19 de Abril</p>
+                    <p>Email: alumnos@fi.unju.edu.ar</p>
+                    <p>Tel: +54 388 1234567</p>
+                </div>
+                <div class="footer-section">
+                    <h3>REDES SOCIALES</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
             </div>
-            <div class="testimonio">
-                <p>"Entrenadores súper profesionales y clases muy variadas."</p>
-                <h4>- Carlos Díaz</h4>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Energy. Todos los derechos reservados.</p>
             </div>
-        </div>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <div class="newsletter">
-            <h3>Suscríbete a nuestro Newsletter</h3>
-            <form>
-                <input type="email" placeholder="Tu correo electrónico" required>
-                <button type="submit">Suscribirse</button>
-            </form>
-        </div>
-
-        <div class="redes-sociales">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">YouTube</a>
-        </div>
-
-        <div class="mapa">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5828.523636359913!2d-65.30040234913213!3d-24.18683181154682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b0f5bca584281%3A0xb1d519d50cac526d!2sFacultad%20de%20Ingenier%C3%ADa%20-%20UNJu!5e0!3m2!1ses!2sar!4v1744355456380!5m2!1ses!2sar" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-    </footer>
-
+        </footer>
+    </div>
 </body>
+
 </html>
